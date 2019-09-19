@@ -1,0 +1,24 @@
+name: Auth0 Deploy CLI Action
+description: A GitHub Action wrapping auth0-deploy-cli
+author: Twyla GmbH
+branding:
+  icon: shield
+  color: orange
+
+inputs:
+  domain:
+    description: Auth0 Domain
+    required: true
+  id:
+    description: Auth0 Client ID
+    required: true
+  secret:
+    description: Auth0 Client Secret
+    required: true
+runs:
+  using: docker
+  image: docker://quay.io/abn/auth0-deploy-cli:v3.6.0
+  env:
+    AUTH0_DOMAIN: ${{ inputs.domain }}
+    AUTH0_CLIENT_ID: ${{ inputs.id }}
+    AUTH0_CLIENT_SECRET: ${{ inputs.secret }}
