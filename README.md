@@ -3,8 +3,18 @@ This action for [auth0-deploy-cli](https://github.com/auth0/auth0-deploy-cli) en
 arbitrary actions with the `a0deploy` command, including import and export of tenant 
 configuration.
 
+Refer to the [Auth0 Extensions Documentation](https://auth0.com/docs/extensions/deploy-cli)
+for more information on the extension, installation and configuration.
+
 The underlying container used is maintained at 
 [auth0-deploy-cli-container](https://github.com/abn/auth0-deploy-cli-container). 
+
+### Parameters
+| Argument   | Description |
+|------------|-------------|
+| domain  | Full domain for the tenant you are configuring. (eg: `tenant.eu.auth0.com`) |
+| id   | Auth0 Client ID |
+| secret    | Auth0 Client Secret  |
 
 ### Usage
 An example configuration deploying tenant configuration from the project where this 
