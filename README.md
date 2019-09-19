@@ -3,6 +3,9 @@ This action for [auth0-deploy-cli](https://github.com/auth0/auth0-deploy-cli) en
 arbitrary actions with the `a0deploy` command, including import and export of tenant 
 configuration.
 
+The underlying container used is maintained at 
+[auth0-deploy-cli-container](https://github.com/abn/auth0-deploy-cli-container). 
+
 ### Usage
 An example configuration deploying tenant configuration from the project where this 
 workflow is running. The tenant input file is expected to be at `./tenant.yml`.
