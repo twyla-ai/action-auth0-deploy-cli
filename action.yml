@@ -15,9 +15,12 @@ inputs:
   secret:
     description: Auth0 Client Secret
     required: true
+  cli-version:
+    description: Auth0 Deploy CLI Version
+    default: "latest"
 runs:
   using: docker
-  image: docker://quay.io/abn/auth0-deploy-cli:v3.6.0
+  image: docker://quay.io/abn/auth0-deploy-cli:${{ inputs.cli-version }}
   env:
     AUTH0_DOMAIN: ${{ inputs.domain }}
     AUTH0_CLIENT_ID: ${{ inputs.id }}

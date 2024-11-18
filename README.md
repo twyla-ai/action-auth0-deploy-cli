@@ -10,11 +10,12 @@ The underlying container used is maintained at
 [auth0-deploy-cli-container](https://github.com/abn/auth0-deploy-cli-container). 
 
 ### Parameters
-| Argument   | Description |
-|------------|-------------|
-| domain  | Full domain for the tenant you are configuring. (eg: `tenant.eu.auth0.com`) |
-| id   | Auth0 Client ID |
-| secret    | Auth0 Client Secret  |
+| Argument    | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| domain      | Full domain for the tenant you are configuring. (eg: `tenant.eu.auth0.com`) |
+| id          | Auth0 Client ID                                                             |
+| secret      | Auth0 Client Secret                                                         |
+| cli-version | Auth0 Deploy CLI Version (defaults to `latest`)                             |
 
 ### Usage
 An example configuration deploying tenant configuration from the project where this 
